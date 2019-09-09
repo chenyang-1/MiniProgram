@@ -1,0 +1,54 @@
+/* 电影背景图片虚化效果 */
+.detail-container{
+  height:400rpx;
+  filter:blur(40rpx);
+  opacity: .9;
+}
+/* 2.电影背景遮罩层,显示电影背景底层 */
+.detail-mask{
+  position: absolute;
+  width:100%;
+  height:400rpx;
+  background:#333;
+  top:0;left:0;
+  z-index:-1;  /*底层显示*/
+}
+/* 电影详细信息 */
+.detail-info{
+  position: absolute;
+  display:flex;
+  top:0;left:0;
+  width:100%;
+  height: 400rpx;
+  padding:20rpx;
+}
+/* 3.1.电影图片  左侧大图 */
+.detail-img{
+  width:280rpx;/*大图宽度*/
+  height:90%;  /*大图高度*/
+  margin-right: 24rpx; /*与右侧文字间距*/
+}
+/* 右侧区域 */
+.detail{
+  flex-grow:1; /*文字会占满剩余空间*/
+  line-height: 60rpx;  /*行高*/
+  color:#fff;
+  font-size: 24rpx;
+}
+/* 评分样式 */
+.detail-sc{
+  color:#fc0;
+  font-size: 36rpx;
+}
+
+/* 电影描述 */
+.desc{
+  padding:20rpx;
+  font-size: 24rpx;
+  color:#555;
+}
+/*预览图片*/
+.comment-img{
+  width:200rpx;height:200rpx;
+  margin-left:20rpx;
+}

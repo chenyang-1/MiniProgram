@@ -1,0 +1,4 @@
+<van-tabs active="{{ active }}" bind:change="onYhqChange">
+  <van-tab title="优惠券"></van-tab>
+  <van-tab title="会员卡"></van-tab>
+</van-tabs>

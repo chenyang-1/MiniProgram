@@ -1,0 +1,6 @@
+<van-badge-group active="{{ active }}" bind:change="onChange">
+  <van-badge title="食品类" />
+  <van-badge title="爆米花" info="" />
+  <van-badge title="可乐" info="" />
+  <van-badge title="矿泉水" info="" />
+</van-badge-group>

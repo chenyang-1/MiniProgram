@@ -1,0 +1,12 @@
+.view-box{
+  position: absolute; left: 40%; top: 36%;
+}
+.dd{
+  width:150rpx;height:150rpx;
+}
+.dd-font{
+  margin-top:5rpx;
+  font-size:26rpx;
+  color:#bfbfbf;
+  text-align:center;
+}

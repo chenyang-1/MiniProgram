@@ -1,0 +1,45 @@
+{
+  "pages": [ 
+        "pages/my/my",
+      "pages/home/home",
+      "pages/comment/comment",
+      "pages/movie/movie",
+  
+      "pages/dingdan/dingdan",
+      "pages/yd/yd",
+      "pages/yhq/yhq"
+
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "我的电影",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#f00",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "images/home2.png",
+      "selectedIconPath": "images/home1.png"
+    },
+    {
+      "pagePath": "pages/movie/movie",
+      "text": "卖品",
+      "iconPath": "images/movie2.png",
+      "selectedIconPath": "images/movie1.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "images/wode2.png",
+      "selectedIconPath": "images/wode1.png"
+    }
+    ]
+  }
+}

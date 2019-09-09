@@ -1,0 +1,41 @@
+<view class="home">
+<!-- 搜索框 -->
+  <van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+
+<!-- 上传轮播图片 -->
+<!-- <view bindtap="myUpload">上传</view> -->
+<!-- 显示图片 -->
+<!-- 轮播图 -->
+  <swiper class="u-wrp-bnr" indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">  
+    <block wx:for="{{imgUrls}}" wx:key="key">
+      <swiper-item>  
+        <image mode="aspectFill" class="u-img-slide" src="{{item.url}}"/>  
+      </swiper-item>  
+    </block>  
+  </swiper>
+ <!-- 电影部分 -->
+  <view class="movie" wx:for="{{list}}" wx:key="index">
+     <!--左侧:图片  -->
+    <image class="movie-img" src="{{item.images.small}}"></image>
+    <!-- 右侧:电影信息 -->
+    <view class="movie-info">
+      <!-- 标题 -->
+      <view class="movie-title">{{item.title}}</view>
+      <!-- 评分 -->
+      <view class="movie-score">观众评分
+        <text>{{item.rating.average}}</text>
+      </view>
+      <!-- 主演 -->
+      <view>主演:
+        <text wx:for="{{item.casts}}" wx:key="index">{{item.name}} </text>
+      </view>
+      <!-- 年份 -->
+      <view>年份:{{item.year}}</view>
+      <!-- 详情按钮 -->
+      <button class="movie-comment" bindtap="jumpMovie" data-id="{{item.id}}">详情</button>
+    </view>
+  </view>  
+</view>
+
+
+

@@ -1,0 +1,6 @@
+<view class="view-box">
+  <view>
+    <image class="dd" src="/images/dingdan.png"></image>
+  </view>
+  <view class="dd-font">您还没做订单哦</view>
+</view>

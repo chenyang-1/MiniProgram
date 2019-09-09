@@ -1,0 +1,43 @@
+
+  <view>
+    <!-- 电影图片 -->
+    <view class="detail-container" style="background:url('{{detail.images.large}}')" no-repeat top></view>
+    <!-- 遮罩层 -->
+    <view class="detail-mask"></view>
+    <!-- 电影介绍 -->
+    <view class="detail-info">
+      <!-- 3.1图片 -->
+      <image class="detail-img" src="{{detail.images.large}}"></image>
+      <view class="detail">
+        <!-- 3.2标题 -->
+        <view>{{detail.original_title}}</view>
+        <!-- 3.3评分 -->
+        <view class="detail-sc">{{detail.rating.average}}</view>
+        <!-- 3.4国家 -->
+        <view>{{detail.countries[0]}}</view>
+        <!-- 3.5导演 -->
+        <view>{{detail.directors[0].name}}</view>
+      </view>
+    </view>
+    <!-- 4.电影描述 -->
+    <view class="desc"> {{detail.summary}}</view>
+    <!-- 4.电影评论 -->
+    <van-cell-group>
+    <van-field
+      value="{{ value }}"
+      placeholder="发表您的评论"
+      border="{{ true }}"
+      bind:change="onContentChange"/>
+  </van-cell-group>
+    <!-- 5.电影打分 -->
+      <van-rate value="{{ score }}" bind:change="onScoreChange" />
+    <!-- 6.图片上传按钮 -->
+  <van-button type="warning" size="large" bindtap="selectImage">上传图片    </van-button>
+  <!-- 7.图片预览区 -->
+  <view>
+      <image wx:for="{{images}}" wx:key="index" src="{{item}}" class="comment-img"></image>
+  </view>
+  <!-- 8.发表评论 -->
+  <van-button type="danger" size="large" bindtap="mysubmit">提交评论</van-button>
+  </view>
+

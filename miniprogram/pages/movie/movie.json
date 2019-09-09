@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-badge": "vant-weapp/badge/index",
+    "van-badge-group": "vant-weapp/badge-group/index"
+  }
+}

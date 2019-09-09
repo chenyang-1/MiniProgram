@@ -1,0 +1,4 @@
+<van-tabs active="{{ active }}" bind:change="onYdChange">
+  <van-tab title="想看"></van-tab>
+  <van-tab title="看过"></van-tab>
+</van-tabs>
